@@ -1,5 +1,5 @@
 export function initialize(instance) {
-  let pusherService = instance.container.lookup('service:pusher');
+  let pusherService = instance.__container__.lookup('service:pusher');
   pusherService.setup('test-stub-key');
 }
 
